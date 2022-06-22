@@ -16,6 +16,30 @@ body {
     position: relative;
     height: 70px;
     width: 70px;
+    border-radius: 40%;
     background-color: #fff;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.toggle::before,
+.toggle::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+
+}
+
+.toggle::before {
+    top: -50%;
+    left: 0;
+    background-color: yellow;
+}
+
+.toggle::after {
+    right: -50%;
+    top: 0;
+    background-color: rebeccapurple;
+
 }
