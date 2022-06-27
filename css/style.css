@@ -48,6 +48,19 @@ body {
 
 }
 
+.toggle,
+.toggle::before,
+.toggle:after {
+    transition: all 0.6s linear;
+    transition-delay: 0.3s;
+}
+
+.toggle.forward,
+.toggle.forward::before,
+.toggle.forward:after {
+    background-color: #eb608c;
+}
+
 .circle {
     position: absolute;
     left: 7px;
