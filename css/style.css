@@ -60,12 +60,12 @@ body {
     z-index: 100;
 }
 
-.toggle:hover .circle {
-    animation: move 0.6s linear forwards;
+.toggle.forward .circle {
+    animation: front 0.6s linear forwards;
 
 }
 
-@keyframes move {
+@keyframes front {
     0% {
         left: 7px;
         top: -28px;
@@ -79,6 +79,29 @@ body {
     100% {
         left: 42px;
         top: 7px;
+    }
+
+}
+
+.toggle.reverse .circle {
+    animation: back 0.6s linear forwards;
+
+}
+
+@keyframes back {
+    0% {
+        left: 42px;
+        top: 7px;
+    }
+
+    50% {
+        top: 1px;
+        left: 17px;
+    }
+
+    100% {
+        left: 7px;
+        top: -28px;
     }
 
 }
