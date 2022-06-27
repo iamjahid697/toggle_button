@@ -16,7 +16,9 @@ body {
     position: relative;
     height: 70px;
     width: 70px;
-    border-radius: 40%;
+
+    transform: rotate(-45deg);
+    border-bottom-left-radius: 100px;
     background-color: #fff;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
 }
@@ -28,18 +30,31 @@ body {
     height: 100%;
     width: 100%;
     border-radius: 50px;
+    background-color: #fff;
 
 }
 
 .toggle::before {
     top: -50%;
     left: 0;
-    background-color: yellow;
+
 }
 
 .toggle::after {
     right: -50%;
     top: 0;
-    background-color: rebeccapurple;
 
+
+}
+
+.circle {
+    position: absolute;
+    left: 7px;
+    top: -28px;
+    height: 55px;
+    width: 55px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    z-index: 100;
 }
