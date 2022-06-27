@@ -21,6 +21,7 @@ body {
     border-bottom-left-radius: 100px;
     background-color: #fff;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
 }
 
 .toggle::before,
@@ -57,4 +58,27 @@ body {
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     z-index: 100;
+}
+
+.toggle:hover .circle {
+    animation: move 0.6s linear forwards;
+
+}
+
+@keyframes move {
+    0% {
+        left: 7px;
+        top: -28px;
+    }
+
+    50% {
+        top: -1px;
+        left: 17px;
+    }
+
+    100% {
+        left: 42px;
+        top: 7px;
+    }
+
 }
